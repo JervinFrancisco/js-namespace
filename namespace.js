@@ -3,7 +3,7 @@ var FRAN0436 = {
     init: function () {
         var box = document.createElement('div'),
         boxes = document.getElementById('boxes');
-        box.textContent = 'FRAN0436';
+        box.textContent = "FRAN0436";
         box.classList.add('box');
         boxes.appendChild(box);
         // EventListners Part
@@ -12,8 +12,8 @@ var FRAN0436 = {
         box.addEventListener('mouseout', MOut);
 
         function MKlick(ev) {
-            ev.currentTarget.style.borderColor = "#FFFF00";
-            ev.currentTarget.style.backgroundColor = "aqua";
+            ev.currentTarget.style.borderColor = "#0026FF";
+            ev.currentTarget.style.backgroundColor = "#FFF000";
             ev.currentTarget.style.fontWeight = "bolder";
         }
 
