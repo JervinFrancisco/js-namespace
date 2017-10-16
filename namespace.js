@@ -1,15 +1,15 @@
 var FRAN0436 = {
 
     init: function () {
-        var clevland = document.createElement('div'),
+        var box = document.createElement('div'),
         boxes = document.getElementById('boxes');
-        clevland.textContent = 'FRAN0436';
-        clevland.classList.add('box');
+        box.textContent = 'FRAN0436';
+        box.classList.add('box');
         boxes.appendChild(box);
         // EventListners
-        clevland.addEventListener('click', MKlick);
-        clevland.addEventListener('mouseover', MOver);
-        clevland.addEventListener('mouseout', MOut);
+        box.addEventListener('click', MKlick);
+        box.addEventListener('mouseover', MOver);
+        box.addEventListener('mouseout', MOut);
 
         function MKlick(ev) {
             ev.currentTarget.style.borderColor = "#FFFF00";
