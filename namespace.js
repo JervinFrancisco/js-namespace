@@ -14,7 +14,7 @@ var FRAN0436 = {
         function MKlick(ev) {
             ev.currentTarget.style.borderColor = "#FFFF00";
             ev.currentTarget.style.backgroundColor = "aqua";
-            ev.currentTarget.style.fontWeight = "bold";
+            ev.currentTarget.style.fontWeight = "bolder";
         }
 
         function MOver(ev) {
