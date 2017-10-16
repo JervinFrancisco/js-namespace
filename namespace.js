@@ -6,7 +6,7 @@ var FRAN0436 = {
         box.textContent = 'FRAN0436';
         box.classList.add('box');
         boxes.appendChild(box);
-        // EventListners
+        // EventListners Part
         box.addEventListener('click', MKlick);
         box.addEventListener('mouseover', MOver);
         box.addEventListener('mouseout', MOut);
