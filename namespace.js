@@ -1,22 +1,22 @@
 var FRAN0436 = {
-    box : null,
+
     init: function () {
-        this.box = document.createElement('div'),
+        var box = document.createElement('div'),
+        boxes = document.getElementById('boxes');
+        box.textContent = 'FRAN0436';
         box.classList.add('box');
-        this.box.textContent = 'Fran0436';
-        boxes = document.getElementById('boxes').appendChild('box');
-        
+        boxes.appendChild(box);
         // EventListners
-        this.box.addEventListener('click', MKlick);
-        this.box.addEventListener('mousedown', MDown);
-        this.box.addEventListener('mouseout', MOut);
-        
+        box.addEventListener('click', MKlick);
+        box.addEventListener('mouseover', MOver);
+        box.addEventListener('mouseout', MOut);
+
         function MKlick(ev) {
             ev.currentTarget.style.borderColor = "#FFFF00";
             ev.currentTarget.style.backgroundColor = "#800000";
         }
 
-        function MDown(ev) {
+        function MOver(ev) {
             ev.currentTarget.classList.toggle('highlight');
         }
 
@@ -25,4 +25,3 @@ var FRAN0436 = {
         }
     }
 };
-
