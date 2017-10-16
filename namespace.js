@@ -15,6 +15,7 @@ var FRAN0436 = {
             ev.currentTarget.style.borderColor = "#0026FF";
             ev.currentTarget.style.backgroundColor = "#FFF000";
             ev.currentTarget.style.fontWeight = "bolder";
+            ev.currentTarget.style.borderBottomStyle = "thick solid #223F00";
         }
 
         function MOver(ev) {
